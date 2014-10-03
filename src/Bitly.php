@@ -47,7 +47,7 @@ class Bitly {
      */
     protected function getApiKey()
     {
-        return array_get($this->config, 'API_KEY') ?: getenv('BITLY_API_KEY');
+        return array_get($this->config, 'ACCESS_TOKEN') ?: getenv('BITLY_ACCESS_TOKEN');
     }
 
 }
