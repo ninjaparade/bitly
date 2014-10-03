@@ -15,7 +15,7 @@ class BitlyServiceProvider extends ServiceProvider {
 
 	public function boot()
 	{
-		// $this->package('ninjaparade/bitly', 'ninjaparade/bitly', __DIR__.'/..');
+		$this->package('ninjaparade/bitly', 'ninjaparade/bitly', __DIR__.'/..');
 	}
 	/**
 	 * Register the service provider.
