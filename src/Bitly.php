@@ -17,9 +17,15 @@ class Bitly {
      * @param $long
      * @return shortened url from long url
      */
-    public function shorten($long)
+    public function shorten($long, $verbos = true)
     {
-        return array_get($this->client->Shorten(['longUrl' => $long]), 'url');
+        if($verbos)
+        {
+            return $this->client->Shorten(['longUrl' => $long]);
+        }else{
+            return array_get($this->client->Shorten(['longUrl' => $long]), 'url');    
+        }
+        
     }
 
     /**
